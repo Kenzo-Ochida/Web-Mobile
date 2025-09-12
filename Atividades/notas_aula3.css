@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(179, 179, 241);
+    display:flex;
+   
+}
+
+nav {
+    background: linear-gradient(to right, pink, rgb(94, 94, 185));
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 10);
+ 
+}
+
+section {
+    /* background: linear-gradient(to left, pink, rgb(94, 94, 185)); */
+    background-color:rgb(35, 160, 160);
+    border-radius: 10px;
+    transition: background-color 5s ease;
+
+}
+
+article {
+    background-color: rgb(181, 102, 102);
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    body {
+        font-size: 14px;
+    }
+}
