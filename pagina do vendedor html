@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarketFácil</title>
+  <link rel="stylesheet" href="pag_vendedor.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <section class="logo">
+      <a href="pag_vendendor.html" class="logo-link">MarketFácil</a>
+    </section>
+    <nav class="nav-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="#">Pedidos</a> 
+      <a href="#">Log-out</a>
+    </nav>
+  </header>
+
+  
+
+  
+  <button class="criar-btn">Criar +</button>
+
+</body>
+</html>
