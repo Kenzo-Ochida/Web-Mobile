@@ -9,7 +9,7 @@ body{
     display: flex;
     font-family: 'Inter', sans-serif, '500';
     background-color: #2C3E50;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 h1, h2, h3, p, label {

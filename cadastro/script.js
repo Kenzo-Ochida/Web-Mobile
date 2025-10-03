@@ -29,5 +29,3 @@ document.addEventListener("DOMContentLoaded", function () {
         goToLogin(right_article, form_login);
     }
 });
-
-export { user_type };
