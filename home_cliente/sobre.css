@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #ffffff;
-  color: #0d6efd;
+  color: #2C3E50;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,7 +11,7 @@ body {
 
 /* Header */
 header {
-  background: #0d6efd;
+  background: #2C3E50;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -39,17 +39,21 @@ header {
   gap: 14px;
 }
 
-.nav-links a {
+.nav-links a, 
+.nav-links p {
   text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: bold;
   padding: 8px 14px;
   transition: 0.2s;
+  margin: 0;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, 
+.nav-links p:hover {
   color: #cce0ff;
+  cursor: pointer;
 }
 
 /* Conteúdo principal */
@@ -76,7 +80,7 @@ section.sobre article p {
 
 /* Footer */
 footer {
-  background: #0d6efd;
+  background: #2C3E50;
   color: white;
   text-align: center;
   padding: 12px;

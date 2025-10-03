@@ -7,36 +7,39 @@
     <title>Faça seu cadastro</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer type="module"></script>
 </head>
 
 <body>
-
     <section class="left_side">
-        <h1>Potencialize seu negócio com o <p class="italic_name">MarketFácil !</p></h1>
+        <h1> Potencialize seu negócio com o <p class="italic_name"> MarketFácil ! </p></h1>
     </section>
 
     <section class="right_side">
-        <article>
-           
+        <article class="preForm">
+            <h3 class="fadeout">Bem-vindo(a) ao <p class="italic_name">MarketFácil.</p></h3>
+            <button class="fadeout btn_cliente">Sou Cliente</button>
+            <button class="fadeout btn_vendedor">Sou Vendedor</button>
+            
+            <a class="fadeout" href="#">
+                <p class="fadeout">Já tenho uma conta.</p>
+            </a>
 
-            <h3> Insira suas informações. </h3>
             <form>
+                <h3> Insira suas informações. </h3>
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
-
+                
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required placeholder="Digite seu email"><br>
-
+                
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required placeholder="Crie uma senha">
-
-                <button type="submit">Cadastrar</button>
+                
+                <button type="submit"><a href="../home/index.html">Cadastrar</a></button>
             </form>
-
         </article>
     </section>
-
 </body>
 
 </html>

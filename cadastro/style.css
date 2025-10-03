@@ -9,6 +9,7 @@ body{
     display: flex;
     font-family: 'Inter', sans-serif, '500';
     background-color: #2C3E50;
+    /* overflow: hidden; */
 }
 
 h1, h2, h3, p, label {
@@ -28,7 +29,7 @@ a p{
     color: black;
     font-size: 2.2vh;
     font-weight: 700;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .italic_name{
@@ -54,8 +55,17 @@ a p{
     box-shadow: 5px 10px 11.5px rgba(0, 0, 0, 0.5);
 }
 
+.right_side article > *{
+    transition: opacity 1s ease, transform 0.3s ease;
+}
+
+.right_side article > .invisible{
+    opacity: 0;
+    transform: translateX(-50vw);
+}
+
 .right_side article h3{
-    margin-top: 10vh;
+    margin: 10vh 0 5vh;
     font-size: 90%;
 }
 
@@ -66,20 +76,34 @@ a p{
 
 .right_side article button{
     width: 40%;
-    height: 8vh;
+    height: 10vh;
     font-size: 80%;
     font-weight: 600;
     margin-top: 8vh;
     background-color: #D9D9D9;
     border-radius: 10vh;
+    user-select: none;
     border: 0;
 }
 
+
 form {
     display: flex;
+    transform: translateX(50vw);
+    position: absolute;
     flex-direction: column;
     width: 70%;
-    margin-top: 5vh;
+    margin-top: 2vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+form.visible{
+    transform: translateX(0);
+    pointer-events: auto;
+    position: static;
+    opacity: 1;
 }
 
 form label {
@@ -104,7 +128,7 @@ form button[type="submit"] {
     margin: 0 auto;
     width: 60%;
     padding: 1.5vh;
-    font-size: 2vh;
+    font-size: 3    vh;
     font-weight: 600;
     border: none;
     border-radius: 10vh;
@@ -114,6 +138,13 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: #a0a0a0;
+}
+
+form button a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    user-select: none;
 }
 
 form label {
